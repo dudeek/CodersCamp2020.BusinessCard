@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+
+
+/*  NAV SECTION  */
+nav {
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 3%;
+  height: 100px;
+  background-color: #011A27;
+}
+
+nav .logo {
+  display: flex;
+  float: left;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+  font-size: 35px;
+  color: #fff;
+}
+
+nav .links {
+  display: flex;
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav .links li {
+  list-style: none;
+}
+
+nav .links a:hover {
+  color: sandybrown;
+}
+
+nav .links a {
+  display: block;
+  padding: 1em;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.6s;
+}
+
+#nav-toggle {
+  position: absolute;
+  top: -99px;
+}
+
+nav .icon-burger {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav .icon-burger .line {
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all .3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+/* PHOTO SECTION */
+.container {
+  position: relative;
+  margin-top: 100px;
+  height: 91vh;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: content-box;
+  filter: brightness(0.8);
+}
+
+.container img.animated-photo {
+  position: absolute;
+  max-height: 70vh;
+  max-width: 70vw;
+  right: 5px;
+  bottom: 5px;
+}
+
+.container div.description-container {
+  position:absolute;
+  color: #fff;
+  top: 200px;
+  right: 450px;
+  font-size: 42px;
+  margin-left: 30px;
+  font-family: 'Langar', cursive;
+  text-shadow: 5px 5px #011A27;
+} 
+
+
+
+
+
+
+/* ABOUT SECTION */
+
+section.about {
+  height: 70vh;
+}
+
+
+
+
+
+/* SKILLS SECTION  */
+
+section.skills-section {
+  display: block;
+  height: 100vh;
+  background-color: #bbb;
+}
+
+
+
+
+
+
+
+
+/* PORTFOLIO SECTION  */
+
+
+
+
+
+
+
+
+
+
+/* CONTACT SECTION  */
+
+
+
+
+
+
+
+
+
+
+/* MEDIA */
+
+
+/* @media screen and (max-width: 1710px) {
+  .container img.me {
+    display: none;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  nav .logo {
+    float: none;
+    width: auto;
+    justify-content: center;
+  }
+
+  nav .links {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, .75);
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all .5s ease-in-out;
+  }
+
+  nav .links a {
+    font-size: 20px;
+  }
+
+  nav :checked ~ .links {
+    bottom: 0;
+  }
+
+  nav .icon-burger {
+    display: block;
+  }
+}
