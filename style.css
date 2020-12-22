@@ -20,7 +20,7 @@ nav {
   background-color: #011A27;
 }
 
-nav .logo, b {
+.logo, b {
   display: flex;
   float: left;
   width: 40%;
@@ -30,7 +30,7 @@ nav .logo, b {
   color: #fff;
 }
 
-nav .links {
+.links {
   display: flex;
   float: right;
   padding: 0;
@@ -41,15 +41,15 @@ nav .links {
   align-items: center;
 }
 
-nav .links li {
+.links li {
   list-style: none;
 }
 
-nav .links a:hover {
+.links a:hover {
   color: sandybrown;
 }
 
-nav .links a {
+.links a {
   display: block;
   padding: 1rem;
   font-size: 2rem;
@@ -64,7 +64,7 @@ nav .links a {
   top: -99px;
 }
 
-nav .icon-burger {
+.icon-burger {
   display: none;
   position: absolute;
   right: 5%;
@@ -72,7 +72,7 @@ nav .icon-burger {
   transform: translateY(-50%);
 }
 
-nav .icon-burger .line {
+.icon-burger .line {
   width: 30px;
   height: 5px;
   background-color: #fff;
@@ -80,9 +80,6 @@ nav .icon-burger .line {
   border-radius: 3px;
   transition: all .3s ease-in-out;
 }
-
-
-
 
 /* PHOTO SECTION */
 .container {
@@ -96,7 +93,7 @@ nav .icon-burger .line {
   filter: brightness(0.8);
 }
 
-.container img.animated-photo {
+.container .animated-photo {
   position: absolute;
   max-height: 70vh;
   max-width: 70vw;
@@ -104,7 +101,7 @@ nav .icon-burger .line {
   bottom: 5px;
 }
 
-.container div.description-container{
+.container .description-container{
   position:absolute;
   color: #fff;
   top: 200px;
@@ -115,22 +112,20 @@ nav .icon-burger .line {
   float: left;
 } 
 
-.container div.description-container h1{
+.container .description-container h1{
   font-size: 8.4rem;
 } 
 
-.container div.description-container h4{
+.container .description-container h4{
   font-size: 6rem;
 }
-
-
 
 /* ABOUT SECTION */
 
 section.about {
   font-family: 'Montserrat', sans-serif;
-  padding-top: 50px;
-  margin: 0 5%;
+  padding-top: 15vh;
+  margin: 0 5% 0 5%;
 }
 
 .about h1 {
@@ -169,14 +164,11 @@ section.about {
   line-height: 5.5rem;
 }
 
-
-
 /* SKILLS SECTION  */
 
 section.skills-section {
-  padding-top: 10vh;
+  padding-top: 15vh;
   font-size: 2rem;
-  height: 30vh;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -190,6 +182,7 @@ section.skills-section .icons {
   padding-top: 5vh;
   display: grid;
   grid: 1fr / 1fr 1fr 1fr 1fr 1fr;
+  height: 100px;
   text-align: center;
 }
 
@@ -221,13 +214,11 @@ i.fa-node {
   color: green;
 }
 
-
 /* PORTFOLIO SECTION  */
 
 section.portfolio-section {
-  margin-top: 10vh;
+  padding-top: 15vh;
 }
-
 
 section.portfolio-section h1 {
   font-family: 'Langar', cursive;
@@ -237,6 +228,7 @@ section.portfolio-section h1 {
 
 section.portfolio-section .projects {
   display: grid;
+  padding-top: 5vh;
   font-family: 'Montserrat', sans-serif;
   grid: 1fr / 1fr 1fr;
   text-align: center;
@@ -270,8 +262,8 @@ section.portfolio-section .projects a:hover {
 
 /* CONTACT SECTION  */
 section.contact-section {
+  padding-top: 15vh;
   font-family: 'Montserrat', sans-serif;
-  padding-top: 5vh;
   width: 100%;
 }
 
@@ -330,8 +322,6 @@ section.contact-section button[type="reset"]:hover {
   color: green;
 }
 
-
-
 /* FOOTER */
 footer{
   height: 5vh;
@@ -343,9 +333,6 @@ footer{
   letter-spacing: 0.2rem;
   line-height: 5vh;
 }
-
-
-
 
 /* MEDIA */
 
@@ -367,9 +354,9 @@ footer{
 @media screen and (max-width: 1270px) {
   section.skills-section .icons {
     display: grid;
-    grid: 1fr / 1fr 1fr 1fr;
-    grid-template-rows: 150px 2fr;
+    grid: 1fr 1fr / 1fr 1fr 1fr;
   }
+
   section.portfolio-section {
     margin-top: 25vh;
   } 
@@ -391,14 +378,13 @@ footer{
   }
   section.portfolio-section .projects {
     display: grid;
-    grid: 1fr / 1fr;
+    grid: 1fr/ 1fr ;
+    row-gap: 2vh;
+  }
+  section.skills-section .icons{
+    margin-top: 5vh;
   }
 } 
-@media only screen and (max-width 768px) and (max-height 1024px){
-  section.portfolio-section {
-    padding-top: 30vh;
-  }
-}
 
 @media screen and (max-width: 1024px) {
   .container div.description-container h1 {
@@ -422,6 +408,12 @@ footer{
     max-height: 45vh;
     max-width: 45vw;
     right: center;
+  }
+}
+
+@media only screen and (max-width 768px) and (max-height 1024px){
+  section.portfolio-section {
+    padding-top: 30vh;
   }
 }
 
