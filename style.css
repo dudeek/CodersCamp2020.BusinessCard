@@ -3,10 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-size: 10px;
 }
-
-
-
 
 /*  NAV SECTION  */
 nav {
@@ -18,16 +16,17 @@ nav {
   font-family: 'Montserrat', sans-serif;
   padding: 0 3%;
   height: 100px;
+  width: 100vw;
   background-color: #011A27;
 }
 
-nav .logo {
+nav .logo, b {
   display: flex;
   float: left;
   width: 40%;
   height: 100%;
   align-items: center;
-  font-size: 35px;
+  font-size: 3.5rem;
   color: #fff;
 }
 
@@ -52,8 +51,8 @@ nav .links a:hover {
 
 nav .links a {
   display: block;
-  padding: 1em;
-  font-size: 20px;
+  padding: 1rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
@@ -85,16 +84,12 @@ nav .icon-burger .line {
 
 
 
-
-
-
-
 /* PHOTO SECTION */
 .container {
   position: relative;
   margin-top: 100px;
   height: 91vh;
-  background-image: url("../img/background.jpg");
+  background-image: url("img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: content-box;
@@ -109,83 +104,360 @@ nav .icon-burger .line {
   bottom: 5px;
 }
 
-.container div.description-container {
+.container div.description-container{
   position:absolute;
   color: #fff;
   top: 200px;
-  right: 450px;
-  font-size: 42px;
-  margin-left: 30px;
+  text-align: center;
+  margin: 0 25% 0 10%;
   font-family: 'Langar', cursive;
-  text-shadow: 5px 5px #011A27;
+  text-shadow: 4px 4px #011A27;
+  float: left;
 } 
 
+.container div.description-container h1{
+  font-size: 8.4rem;
+} 
 
-
+.container div.description-container h4{
+  font-size: 6rem;
+}
 
 
 
 /* ABOUT SECTION */
 
 section.about {
-  height: 70vh;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 50px;
+  margin: 0 5%;
 }
 
+.about h1 {
+  font-family: 'Langar', cursive;
+  text-align: center;
+  font-size: 6.4rem;
+}
 
+.about h3 {
+  font-family: 'Langar', cursive;
+}
+
+.about div.full-info-container {
+  display: flex;
+  margin: 5vh 0 0 0;
+}
+
+.about div.basic-info {
+  width: 30%;
+  text-align: left;
+  padding-right: 10%;
+  line-height: 3.5rem;
+}
+.about div.basic-info h3,p{
+  font-size: 2.2rem;
+}
+
+.about div.description-about-me {
+  width: 70%;
+  padding: 0% 0 0 15%;
+}
+
+.about div.description-about-me p {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 5.5rem;
+}
 
 
 
 /* SKILLS SECTION  */
 
 section.skills-section {
-  display: block;
-  height: 100vh;
-  background-color: #bbb;
+  padding-top: 10vh;
+  font-size: 2rem;
+  height: 30vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
+section.skills-section h1 {
+  font-family: 'Langar', cursive;
+  text-align: center;
+  font-size: 6.4rem;
+}
 
+section.skills-section .icons {
+  padding-top: 5vh;
+  display: grid;
+  grid: 1fr / 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
 
+section.skills-section div i {
+  font-size: 7rem;
+}
 
+section.skills-section div i:hover {
+  font-size: 9rem;
+}
 
+i.fa-html5 {
+  color: red;
+}
 
+i.fa-css3-alt {
+  color: blue;
+}
+
+i.fa-js {
+  color: gold;
+}
+
+i.fa-react { 
+  color: deepskyblue;
+}
+
+i.fa-node {
+  color: green;
+}
 
 
 /* PORTFOLIO SECTION  */
 
+section.portfolio-section {
+  margin-top: 10vh;
+}
 
 
+section.portfolio-section h1 {
+  font-family: 'Langar', cursive;
+  text-align: center;
+  font-size: 6.4rem;
+}
 
+section.portfolio-section .projects {
+  display: grid;
+  font-family: 'Montserrat', sans-serif;
+  grid: 1fr / 1fr 1fr;
+  text-align: center;
+}
 
+section.portfolio-section .projects h2{
+  font-size: 2.4rem;
+}
 
+section.portfolio-section .project-photo {
+  width: 100%;
+  filter: brightness(0.7);
+  margin-bottom: 1vh;
+}
 
+section.portfolio-section .projects a {
+  font: bold 2rem Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 1px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
 
-
+section.portfolio-section .projects a:hover {
+  background-color: #bbb; 
+}
 
 /* CONTACT SECTION  */
+section.contact-section {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 5vh;
+  width: 100%;
+}
+
+section.contact-section h1 {
+  font-family: 'Langar', cursive;
+  text-align: center;
+  font-size: 6.4rem;
+  padding-bottom: 5vh;
+}
+
+section.contact-section .container-contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 20px #000010;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+section.contact-section .form-group {
+  width: 100%;
+  margin-top: 20px; 
+}
+
+section.contact-section .form-group label {
+  font-size: 2rem;
+}
+section.contact-section .form-group input,
+section.contact-section .form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 1.8rem;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  margin-top: 5px;
+}
+
+section.contact-section textarea {
+  resize: vertical;
+}
+
+section.contact-section button[type="reset"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 2.4rem;
+  border-radius: 8px;
+  color: rgb(24,166,255);
+}
+
+section.contact-section button[type="reset"]:hover {
+  color: green;
+}
 
 
 
-
-
-
+/* FOOTER */
+footer{
+  height: 5vh;
+  background-color: #011A27;
+  color: #fff;
+  font-family: 'Langar', cursive;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  line-height: 5vh;
+}
 
 
 
 
 /* MEDIA */
 
+@media screen and (max-width: 1610px) {
 
-/* @media screen and (max-width: 1710px) {
-  .container img.me {
-    display: none;
+  .container div.description-container{
+    top: 75px;
+  } 
+  
+  .container div.description-container {
+    margin: 0 15%;
   }
-} */
+  .container img.animated-photo {
+    max-height: 60vh;
+    max-width: 60vw;
+  }
+} 
+
+@media screen and (max-width: 1270px) {
+  section.skills-section .icons {
+    display: grid;
+    grid: 1fr / 1fr 1fr 1fr;
+    grid-template-rows: 150px 2fr;
+  }
+  section.portfolio-section {
+    margin-top: 25vh;
+  } 
+  .container div.description-container h1{
+    font-size: 6.4rem;
+  } 
+  .container div.description-container h4{
+    font-size: 4.8rem;
+  }
+  .about div.basic-info h3,p{
+    font-size: 1.8rem;
+  }
+  .about div.description-about-me p {
+    font-size: 1.6rem;
+    line-height: 5rem;
+  }
+  section.portfolio-section .projects h2 {
+    margin-top: 3vh;
+  }
+  section.portfolio-section .projects {
+    display: grid;
+    grid: 1fr / 1fr;
+  }
+} 
+@media only screen and (max-width 768px) and (max-height 1024px){
+  section.portfolio-section {
+    padding-top: 30vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container div.description-container h1 {
+    font-size: 5.8rem;
+  }
+  .container div.description-container h4{
+    font-size: 4.2rem;
+  }
+  .about div.description-about-me p {
+    line-height: 4.2rem;
+  }
+  .container {
+    height: 93vh;
+  }
+}
+@media screen and (max-width: 940px) {
+  .container div.description-container{
+    top: 150px;
+  } 
+  .container img.animated-photo {
+    max-height: 45vh;
+    max-width: 45vw;
+    right: center;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
+  .container {
+    height: 91vh;
+  }
+  section.portfolio-section {
+    margin-top: 35vh;
+  } 
+  .container div.description-container h1 {
+    font-size: 5.4rem;
+  }
+  .container div.description-container h4 {
+    font-size: 4.4rem;
+  }
+  .about div.description-about-me p {
+    line-height: 2.8rem;
+  }
+
+  section.portfolio-section .projects h2 {
+    font-size: 1.8rem;
+  }
+  
   nav .logo {
     float: none;
     width: auto;
     justify-content: center;
+  }
+  section.portfolio-section .projects .project1 img {
+    width: 450px;
+  }
+
+  section.portfolio-section .projects .project2 img {
+    width: 450px;
   }
 
   nav .links {
@@ -216,5 +488,75 @@ section.skills-section {
 
   nav .icon-burger {
     display: block;
+  }
+
+  section.skills-section .icons {
+    padding-top: 0;
+    display: grid;
+    grid: 1fr /1fr;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container div.description-container{
+    top: 50px;
+  } 
+  .container div.description-container h4 {
+    font-size: 3.6rem;
+  }
+  .about div.description-about-me p {
+    line-height: 2.6rem;
+  }
+  .about div.basic-info h3, p {
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+  }
+  section.skills-section {
+    height: 66vh;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    height: 88vh;
+  }
+  section.portfolio-section {
+    margin-top: 45vh;
+  }
+  .about h1 {
+    font-size: 4.5rem;
+  }
+  section.skills-section h1 {
+    font-size: 4.5rem;
+  }
+  section.portfolio-section h1 {
+    font-size: 4.5rem;
+  }
+  section.contact-section h1 {
+    font-size: 4.5rem;
+  }
+
+  .container div.description-container{
+    top: 50px;
+  } 
+  .container div.description-container h1 {
+    font-size: 3.6rem;
+  }
+  .container div.description-container h4 {
+    font-size: 2.6rem;
+  }
+  .about div.description-about-me p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+  .about div.basic-info h3, p {
+    font-size: 1.3rem;
+    line-height: 3rem;
+  }
+  section.portfolio-section .projects .project1 img {
+    width: 275px;
+  }
+  section.portfolio-section .projects .project2 img {
+    width: 275px;
   }
 }

@@ -37,26 +37,119 @@
     <div class="container">
         <img class="animated-photo" src="../img/me.png" alt="Animated photo">
         <div class="description-container">
-            <h1>Nazywam się Tomasz Dudek</h1>
-            <h4>jestem uczestnikiem kursu programowania Coders Camp</h4>
+            <h1>Hi i'm Tomek</h1>
+            <h4>I am a participant of the Coders Camp programming course</h4>
         </div>
     </div>
 
+
     <section id="about" class="about">
-        
+        <h1>About me</h1>
+        <div class="full-info-container">
+            <div class="basic-info">
+                <h3>Full name:</h3>
+                <p>Tomasz Dudek</p>
+                <h3>Age:</h3>
+                <p>24</p>
+                <h3>Profile:</h3>
+                <p>Front-end developer</p>
+                <h3>Email:</h3>
+                <p>t.dudeek@gmail.com</p>
+            </div>
+            <div class="description-about-me">
+                <p>I am a second year student at the University of Applied Computer Science. I am currently studying
+                    computer science.
+                    In 2019 I graduated from the Wrocław University of Technology. In my free time I try to educate in
+                    the field of front-end.
+                    I started my adventure with programming in July 2020.
+                    I am interested in new technologies and esport. I want find job in IT in the future.</p>
+            </div>
+        </div>
     </section>
 
     <section id="skills-section" class="skills-section">
-        <h1>Skills</h1>w
+        <h1>Technology</h1>
+        <div class="icons">
+            <div class="html">
+                <i class="fab fa-html5"></i>
+                <p>HTML 5</p>
+            </div>
 
+            <div class="css">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS 3</p>
+            </div>
+
+            <div class="java-script">
+                <i class="fab fa-js"></i>
+                <p>Java Script</p>
+            </div>
+
+            <div class="react">
+                <i class="fab fa-react"></i>
+                <p>React</p>
+            </div>
+
+            <div class="node">
+                <i class="fab fa-node"></i>
+                <p>Node JS</p>
+            </div>
+        </div>
     </section>
 
-    <section class="portfolio-section"></section>
+    <section class="portfolio-section">
+        <h1>Projects</h1>
+        <div class="projects">
+            <div class="project1">
+                <h2>Serwis do zamawiania jedzenia</h2>
+                <div class="project-photo">
+                    <img src="img/project1.jpg" alt="Photo of project 1">
+                </div>
+                <a href="https://github.com/dudeek">Click</a>
+            </div>
+            <div class="project2">
+                <h2>Quiz Star Wars</h2>
+                <div class="project-photo">
+                    <img src="img/project2.jpg" alt="Photo of project 2">
+                </div>
+                <a href="https://github.com/dudeek">Click</a>
+            </div>
+        </div>
+    </section>
 
-    <section class="contact-section"></section>
+    <section id="contact" class="contact-section">
+        <h1>Contact</h1>
+        <div class="container-contact-section">
+            <form action="" method="POST" id="my-form">
+
+                <div class="form-group">
+                    <label for="firstName"> First Name</label>
+                    <input type="text" class="firstName" name="firstName">
+                </div>
+
+                <div class="form-group">
+                    <label for="latsName">Last Name</label>
+                    <input type="text" class="lastName" name="lastName">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="massage">Massage</label>
+                    <textarea name="massage" class="massage" cols="35" rows="12"></textarea>
+                </div>
+
+                <button type="reset">Submit</button>
+            </form>
+        </div>
+        <div id="status"></div>
+    </section>
 
     <footer>
-
+        <p> &copy; Designed & Built by Tomasz Dudek ~</p>
     </footer>
 
 </body>
